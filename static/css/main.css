@@ -1,0 +1,102 @@
+/* .container {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: red;
+  height: 100vh;
+} */
+/* Show it is fixed to the top */
+
+/* .container {
+  padding: 20px;
+} */
+
+.toped {
+  margin-top: 20px;
+}
+.dataCards {
+  font-size: 25px;
+}
+.divider {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.title {
+  color: white;
+}
+.paddingTop {
+  padding-top: 25px;
+}
+body {
+  background-color: #18222d;
+}
+
+.testClass {
+  background-color: #2d3442;
+}
+.whiteText {
+  color: #7585a7;
+}
+.bordes {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3f4651;
+}
+nav {
+  background-color: #333945;
+}
+.testContainer {
+  background-color: #292f3a;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.textBox {
+  color: #8293b7;
+  font-size: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.buttonsRed {
+  background-color: #db485e;
+}
+.buttonsRed:hover {
+  color: white;
+  background-color: #bc364a;
+}
+.testGreen {
+  color: #21c489;
+}
+.divider {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #3e4554;
+  margin: 1em 0;
+  padding: 0;
+}
+.textTabla {
+  color: #8293b7;
+}
+tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.tableHighlight:hover {
+  background-color: #303744;
+}
+.loading {
+  height: 40px;
+}
+
+input,
+select,
+textarea {
+  color: white;
+}
+
+.footerText {
+  font-size: 12px;
+  color: #7585a7;
+  text-align: center;
+}
