@@ -45,18 +45,18 @@ class RequestNew extends Component {
     return (
       <Layout>
         <div className="row paddingTop">
-          <h2 class="title">Create a request</h2>
-          <div class="divider" />
+          <h2 className="title">Create a request</h2>
+          <div className="divider" />
 
-          <form class="col s12 whiteText" onSubmit={this.onSubmit}>
-            <div class="row">
-              <div class="col s6">
+          <form className="col s12 whiteText" onSubmit={this.onSubmit}>
+            <div className="row">
+              <div className="col s6">
                 Description
-                <div class="input-field">
-                  <i class="fas fa-bullhorn prefix" />
+                <div className="input-field">
+                  <i className="fas fa-bullhorn prefix" />
                   <input
                     id="titulo"
-                    class="materialize-textarea"
+                    className="materialize-textarea"
                     value={this.state.description}
                     onChange={event =>
                       this.setState({ description: event.target.value })
@@ -64,13 +64,13 @@ class RequestNew extends Component {
                   />
                 </div>
               </div>
-              <div class="col s4">
+              <div className="col s4">
                 Recipient
-                <div class="input-field">
-                  <i class="fas fa-user-plus prefix" />
+                <div className="input-field">
+                  <i className="fas fa-user-plus prefix" />
                   <input
                     id="minimumContribution"
-                    class="materialize-textarea"
+                    className="materialize-textarea"
                     value={this.state.recipient}
                     onChange={event =>
                       this.setState({ recipient: event.target.value })
@@ -78,13 +78,13 @@ class RequestNew extends Component {
                   />
                 </div>
               </div>
-              <div class="col s2">
+              <div className="col s2">
                 Value in Ether:
-                <div class="input-field">
-                  <i class="fab fa-ethereum prefix" />
+                <div className="input-field">
+                  <i className="fab fa-ethereum prefix" />
                   <input
                     id="foto"
-                    class="materialize-textarea"
+                    className="materialize-textarea"
                     value={this.state.value}
                     onChange={event =>
                       this.setState({ value: event.target.value })
@@ -93,13 +93,13 @@ class RequestNew extends Component {
                 </div>
               </div>
               <button
-                class="btn right-align col s2 push-s10 toped"
+                className="btn right-align col s2 push-s10 toped"
                 type="submit"
                 name="action"
                 id="submitButton"
               >
                 Submit
-                <i class="material-icons right">send</i>
+                <i className="material-icons right">send</i>
               </button>
             </div>
           </form>

@@ -8,7 +8,8 @@ class ContributeForm extends Component {
   state = {
     value: '',
     errorMessage: '',
-    loading: false
+    loading: false,
+    buttonState: ''
   };
 
   onSubmit = async event => {
@@ -37,33 +38,33 @@ class ContributeForm extends Component {
 
   render() {
     return (
-      <div class="col s12">
-        <div class="card testClass bordes">
-          <div class="card-content orange-text text-light-1">
-            <span class="card-title">Contribute to this campaign:</span>
-            <p class="textBox">Introduce the value in ETH</p>
-            <form class="" onSubmit={this.onSubmit}>
-              <div class="input-field col s12">
-                <i class="fab fa-ethereum prefix" />
+      <div className="col s12">
+        <div className="card testClass bordes">
+          <div className="card-content orange-text text-light-1">
+            <span className="card-title">Contribute to this campaign:</span>
+            <p className="textBox">Introduce the value in ETH</p>
+            <form className="" onSubmit={this.onSubmit}>
+              <div className="input-field col s12">
+                <i className="fab fa-ethereum prefix" />
                 <input
                   id="icon_prefix2"
-                  class="materialize-textarea"
+                  className="materialize-textarea"
                   value={this.state.value}
                   onChange={event =>
                     this.setState({ value: event.target.value })
                   }
                 />
               </div>
-              <button
-                class="btn right-align"
-                type="submit"
-                name="action"
-                id="submitButton"
-              >
-                Submit
-                <i class="material-icons right">send</i>
-              </button>
             </form>
+            <button
+              className="btn right-align"
+              type="submit"
+              name="action"
+              id="submitButton"
+            >
+              Submit
+              <i className="material-icons right">send</i>
+            </button>
           </div>
         </div>
       </div>

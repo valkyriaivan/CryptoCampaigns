@@ -65,6 +65,10 @@ nav {
   color: white;
   background-color: #bc364a;
 }
+.buttonsRed:active {
+  color: white;
+  background-color: #bc364a;
+}
 .testGreen {
   color: #21c489;
 }
@@ -99,4 +103,9 @@ textarea {
   font-size: 12px;
   color: #7585a7;
   text-align: center;
+}
+
+.logo-img {
+  max-height: 59px !important;
+  padding: 5px 0 !important;
 }

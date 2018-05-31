@@ -45,18 +45,18 @@ class CampaignNew extends Component {
     return (
       <Layout>
         <div className="row paddingTop">
-          <h2 class="title">Create a Campaign</h2>
-          <div class="divider" />
+          <h2 className="title">Create a Campaign</h2>
+          <div className="divider" />
 
-          <form class="col s12 whiteText" onSubmit={this.onSubmit}>
-            <div class="row">
-              <div class="col s4">
+          <form className="col s12 whiteText" onSubmit={this.onSubmit}>
+            <div className="row">
+              <div className="col s4">
                 Title:
-                <div class="input-field">
-                  <i class="fas fa-bullhorn prefix" />
+                <div className="input-field">
+                  <i className="fas fa-bullhorn prefix" />
                   <input
                     id="titulo"
-                    class="materialize-textarea"
+                    className="materialize-textarea"
                     value={this.state.titulo}
                     onChange={event =>
                       this.setState({ titulo: event.target.value })
@@ -64,13 +64,13 @@ class CampaignNew extends Component {
                   />
                 </div>
               </div>
-              <div class="col s4">
+              <div className="col s4">
                 Foto:
-                <div class="input-field">
-                  <i class="material-icons prefix">camera_alt</i>
+                <div className="input-field">
+                  <i className="material-icons prefix">camera_alt</i>
                   <input
                     id="foto"
-                    class="materialize-textarea"
+                    className="materialize-textarea"
                     value={this.state.foto}
                     onChange={event =>
                       this.setState({ foto: event.target.value })
@@ -78,13 +78,13 @@ class CampaignNew extends Component {
                   />
                 </div>
               </div>
-              <div class="col s4">
+              <div className="col s4">
                 Minimum contribution(wei):
-                <div class="input-field">
-                  <i class="fas fa-thermometer-empty prefix" />
+                <div className="input-field">
+                  <i className="fas fa-thermometer-empty prefix" />
                   <input
                     id="minimumContribution"
-                    class="materialize-textarea"
+                    className="materialize-textarea"
                     value={this.state.minimumContribution}
                     onChange={event =>
                       this.setState({
@@ -95,14 +95,14 @@ class CampaignNew extends Component {
                 </div>
               </div>
 
-              <div class="col s12">
+              <div className="col s12">
                 Description:
-                <div class="input-field">
-                  <i class="far fa-comment-alt prefix" />
+                <div className="input-field">
+                  <i className="far fa-comment-alt prefix" />
 
                   <textarea
                     id="desc"
-                    class="materialize-textarea"
+                    className="materialize-textarea"
                     value={this.state.desc}
                     onChange={event =>
                       this.setState({ desc: event.target.value })
@@ -112,13 +112,13 @@ class CampaignNew extends Component {
               </div>
 
               <button
-                class="btn waves-effect waves-light right-align"
+                className="btn waves-effect waves-light right-align"
                 type="submit"
                 name="action"
                 id="submitButton"
               >
                 Submit
-                <i class="material-icons right">send</i>
+                <i className="material-icons right">send</i>
               </button>
             </div>
           </form>

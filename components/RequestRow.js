@@ -44,15 +44,18 @@ class Requesttr extends Component {
         <td>
           {request.complete ||
           request.approvalCount == approversCount ? null : (
-            <a class="btn-floating btn-small green" onClick={this.onApprove}>
-              <i class="material-icons">thumb_up</i>
+            <a
+              className="btn-floating btn-small green"
+              onClick={this.onApprove}
+            >
+              <i className="material-icons">thumb_up</i>
             </a>
           )}
         </td>
         <td>
           {request.complete ? null : (
-            <a class="btn-floating btn-small red" onClick={this.onFinalize}>
-              <i class="material-icons">close</i>
+            <a className="btn-floating btn-small red" onClick={this.onFinalize}>
+              <i className="material-icons">close</i>
             </a>
           )}
         </td>

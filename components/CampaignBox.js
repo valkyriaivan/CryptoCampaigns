@@ -17,7 +17,7 @@ class CampaignBox extends Component {
     const titulo = await campaign.methods.title().call();
     const desc = await campaign.methods.desc().call();
 
-    const testing = <TextTruncate line={6} truncateText="..." text={desc} />;
+    const testing = <TextTruncate line={4} truncateText="..." text={desc} />;
 
     this.setState({ foto: foto });
     this.setState({ desc: testing });
@@ -30,22 +30,22 @@ class CampaignBox extends Component {
 
     // const alreadyApproved = ;
     return (
-      <div class="col s12 m4">
-        <div class="card hoverable bordes">
-          <div class="card-image">
+      <div className="col s12 m4">
+        <div className="card hoverable bordes">
+          <div className="card-image">
             <img src={this.state.foto} />
 
             <Link route={`/campaigns/${this.props.direc}`}>
-              <a class="btn-floating halfway-fab waves-effect waves-light buttonsRed">
-                <i class="material-icons">add</i>
+              <a className="btn-floating halfway-fab buttonsRed">
+                <i className="fab fa-ethereum" />
               </a>
             </Link>
           </div>
-          <div class="card-content testClass">
-            <span class="card-title truncate testGreen">
+          <div className="card-content testClass">
+            <span className="card-title truncate testGreen">
               {this.state.titulo}
             </span>
-            <p class="white-text">{this.state.desc}</p>
+            <p className="white-text">{this.state.desc}</p>
           </div>
         </div>
       </div>

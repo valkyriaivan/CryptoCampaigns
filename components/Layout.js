@@ -8,7 +8,7 @@ export default props => {
   return (
     <div>
       <Header />
-      <div class="container main-container">
+      <div className="container main-container">
         <Head>
           <link
             rel="stylesheet"
@@ -32,18 +32,16 @@ export default props => {
         </Head>
         <div className="testContainer bordes z-depth-3">
           {props.children}
-          <div class="divider" />
+          <div className="divider" />
           <p className="footerText">
-            Aplicación desarrollada por <i class="far fa-copyright" /> Ivan
+            Aplicación desarrollada por <i className="far fa-copyright" /> Ivan
             García Gálvez - Repositorio{' '}
             <a href="https://github.com/valkyriaivan/CryptoCampaigns">
-              GitHub <i class="fab fa-github" />
+              GitHub <i className="fab fa-github" />
             </a>
           </p>
         </div>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js" />
-      <script>new LazyLoad();</script>
     </div>
   );
 };

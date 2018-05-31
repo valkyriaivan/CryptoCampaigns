@@ -8,11 +8,13 @@ export default () => {
       <nav>
         <div className="nav-wrapper">
           <Link route="/">
-            <a class="brand-logo center">CryptoStarter</a>
+            <a className="brand-logo center">
+              <img src="/static/image/logo-nav.png" className="logo-img" />
+            </a>
           </Link>
 
           <Link route="/campaigns/new">
-            <a class="btn-floating btn-large halfway-fab buttonsRed">
+            <a className="btn-floating btn-large halfway-fab buttonsRed">
               <i className="material-icons left">fiber_new</i>
             </a>
           </Link>

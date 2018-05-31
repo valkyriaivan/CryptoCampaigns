@@ -42,7 +42,7 @@ class RequestIndex extends Component {
     return (
       <Layout>
         <div className="row paddingTop">
-          <h2 class="title col s9">Requests</h2>
+          <h2 className="title col s9">Requests</h2>
           <Link
             route={`/campaigns/${this.props.address}/requests/new`}
             className="col s2"
@@ -51,7 +51,7 @@ class RequestIndex extends Component {
               <i className="material-icons left">fiber_new</i>Create new request
             </a>
           </Link>
-          <div class="divider" />
+          <div className="divider" />
 
           <table className="centered responsive-table">
             <thead className="orange-text text-light-1">

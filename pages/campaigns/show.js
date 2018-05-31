@@ -40,61 +40,65 @@ class CampaignShow extends Component {
     } = this.props;
     const items = (
       <div>
-        <div class="col s12 m6">
-          <div class="card testClass bordes">
-            <div class="card-content blue-grey-text text-lighten-3">
-              <span class="card-title ">Minimum Contribution (wei)</span>
-              <p class="textBox">
+        <div className="col s12 m6">
+          <div className="card testClass bordes">
+            <div className="card-content blue-grey-text text-lighten-3">
+              <span className="card-title ">Minimum Contribution (wei)</span>
+              <p className="textBox">
                 You must contribute at least this much wei to become an approver
               </p>
             </div>
-            <div class="card-action">
-              <p class="orange-text text-light-1 dataCards">
+            <div className="card-action">
+              <p className="orange-text text-light-1 dataCards">
                 {minimumContribution} wei
               </p>
             </div>
           </div>
         </div>
-        <div class="col s12 m6">
-          <div class="card testClass bordes">
-            <div class="card-content blue-grey-text text-lighten-3">
-              <span class="card-title">Campaign Balance (ether)</span>
-              <p class="textBox">
+        <div className="col s12 m6">
+          <div className="card testClass bordes">
+            <div className="card-content blue-grey-text text-lighten-3">
+              <span className="card-title">Campaign Balance (ether)</span>
+              <p className="textBox">
                 The balance is how much money this campaign has left to spend
               </p>
             </div>
-            <div class="card-action">
-              <p class="orange-text text-light-1 dataCards">
+            <div className="card-action">
+              <p className="orange-text text-light-1 dataCards">
                 {web3.utils.fromWei(balance, 'ether')} ETH
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6">
-          <div class="card testClass bordes">
-            <div class="card-content blue-grey-text text-lighten-3">
-              <span class="card-title">Number of Approvers</span>
-              <p class="textBox">
+        <div className="col s12 m6">
+          <div className="card testClass bordes">
+            <div className="card-content blue-grey-text text-lighten-3">
+              <span className="card-title">Number of Approvers</span>
+              <p className="textBox">
                 Number of people who have already donated to the Campaign
               </p>
             </div>
-            <div class="card-action">
-              <p class="orange-text text-light-1 dataCards">{appoversCount}</p>
+            <div className="card-action">
+              <p className="orange-text text-light-1 dataCards">
+                {appoversCount}
+              </p>
             </div>
           </div>
         </div>
-        <div class="col s12 m6">
-          <div class="card testClass bordes">
-            <div class="card-content blue-grey-text text-lighten-3">
-              <span class="card-title">Number of Requests </span>
-              <p class="textBox">
+        <div className="col s12 m6">
+          <div className="card testClass bordes">
+            <div className="card-content blue-grey-text text-lighten-3">
+              <span className="card-title">Number of Requests </span>
+              <p className="textBox">
                 A request to withdraw money from the contract. Request must be
                 approved by approvers
               </p>
             </div>
-            <div class="card-action">
-              <p class="orange-text text-light-1 dataCards">{requestCount}</p>
+            <div className="card-action">
+              <p className="orange-text text-light-1 dataCards">
+                {requestCount}
+              </p>
             </div>
           </div>
         </div>
@@ -107,11 +111,11 @@ class CampaignShow extends Component {
   render() {
     return (
       <Layout>
-        <div class="row">
+        <div className="row">
           <div className="col s12 m12 toped">
             <div className="card horizontal bordes">
               <div className="card-image">
-                <img class="responsive-img" src={this.props.foto} />
+                <img className="responsive-img" src={this.props.foto} />
               </div>
               <div className="card-stacked testClass">
                 <div className="card-content">
@@ -132,10 +136,10 @@ class CampaignShow extends Component {
             </div>
           </div>
           <div className="col s12 m12">
-            <div class="divider" />
+            <div className="divider" />
           </div>
-          <div class="col s8">{this.renderCards()}</div>
-          <div class="col s4">
+          <div className="col s8">{this.renderCards()}</div>
+          <div className="col s4">
             <ContributeForm address={this.props.address} />
             <Link route={`/campaigns/${this.props.address}/requests`}>
               <a

@@ -34,14 +34,14 @@ class CampaignIndex extends Component {
     return (
       <Layout>
         <div className="row paddingTop">
-          <h2 class="title col s9">Open Campaigns</h2>
-          <Link route="/campaigns/new" className="col s2">
+          <h2 className="title col s9">Open Campaigns</h2>
+          <Link route="/campaigns/new">
             <a className=" btn m6 buttonsRed">
               <i className="material-icons left">fiber_new</i>Create new
               campaign
             </a>
           </Link>
-          <div class="divider" />
+          <div className="divider" />
         </div>
         <div className="row">{this.renderCampaigns()}</div>
       </Layout>
