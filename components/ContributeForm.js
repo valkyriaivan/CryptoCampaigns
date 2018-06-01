@@ -8,7 +8,6 @@ class ContributeForm extends Component {
   state = {
     value: '',
     errorMessage: '',
-    loading: false,
     buttonState: ''
   };
 
@@ -16,7 +15,7 @@ class ContributeForm extends Component {
     event.preventDefault();
     const campaign = Campaign(this.props.address);
 
-    this.setState({ loading: true, errorMessage: '' });
+    this.setState({ errorMessage: '' });
 
     var element = document.getElementById('submitButton');
     element.classList.add('disabled');
@@ -31,6 +30,7 @@ class ContributeForm extends Component {
       Router.replaceRoute(`/campaigns/${this.props.address}`);
     } catch (err) {
       this.setState({ errorMessage: err.message });
+      element.classList.remove('disabled');
     }
 
     element.classList.remove('disabled');
@@ -55,16 +55,17 @@ class ContributeForm extends Component {
                   }
                 />
               </div>
+              <button
+                className="btn right-align"
+                type="submit"
+                name="action"
+                id="submitButton"
+              >
+                Submit
+                <i className="material-icons right">send</i>
+              </button>
+              <p>{this.state.errorMessage}</p>
             </form>
-            <button
-              className="btn right-align"
-              type="submit"
-              name="action"
-              id="submitButton"
-            >
-              Submit
-              <i className="material-icons right">send</i>
-            </button>
           </div>
         </div>
       </div>
